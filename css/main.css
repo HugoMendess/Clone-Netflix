@@ -1,0 +1,404 @@
+/*Variaveis para cor no css*/
+:root{
+	--vermelho: #E50914;
+	--preta: #141414;
+}
+/*resetando as dimensões da box model*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+/*resetando as definições padrões de um link*/
+a{
+	text-decoration: none;
+	text-decoration-style: none;
+	color: none;
+}
+/*
+elementos base*/
+body{
+	background: var(--preta);
+	font-family: 'Arial','Times New Roman', Times, sans-serif;
+	color: white;
+	
+}
+
+.botao2{
+	background-color: rgba(0, 0 , 0, .50);
+	color: white;
+	padding: 15px 30px;
+	margin: 15px;
+	font-size: 12px;
+	cursor: pointer;
+	border: none;
+	transition: .3s ease all;
+	border-radius: 10px;
+	/*visibility: hidden;*/
+	display: none;
+}
+
+.botao2:hover{
+	color: black;
+	background-color:white;
+}
+
+.botao2 i{
+	margin-right: 8px;
+	font-size: 15px;
+}
+.frame{
+	display: flex;
+	position: absolute;
+	/*visibility: hidden;*/
+	display: none;
+}
+
+#button{
+	display: inline;
+}
+/*
+.button-clicked {
+	transition: 0.3s;
+ 	visibility: visible;
+}
+
+.button-clicked2 {
+	transition: 0.3s;
+  	visibility: visible;
+}*/
+
+/*.button-clicked3 {
+	transition: 0.3s;
+  	visibility: hidden;
+}*/
+
+/*#list1, #list2, #list3, #list4, #list5, #list6, #list7, #list8, #list9, #list10, #list11, #list12, #list13, #list14, #list15{
+	display: none;
+}*/
+
+.id{
+	display: none;
+}
+
+/*.button-clicked3 {
+	transition: 0.3s;
+  	visibility: hidden;
+}*/
+
+header .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+header .logo a{
+	margin-left: 5px;
+	color: var(--vermelho);
+	font-family: "Arial Black";
+	font-size: 40px;
+}
+
+header nav a{
+	text-decoration: none;
+	color: #AAA;
+	margin-right: 10px;
+}
+
+header nav a:hover{
+	color: #fff;
+}
+/*
+elementos base*/
+
+
+/*Filme principal*/
+
+.filme-principal{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-coringa.jpg');
+	height: 460px;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#serie1{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/serie1.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#serie2{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/serie2.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#serie3{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-serie3.jpg');
+	height: 460px;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+
+#serie4{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/serie4.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#serie5{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-serie5.jpg');
+	height: 460px;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#filme1{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-filme1.jpg');
+	height: 460px;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#filme2{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-filme2.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#filme3{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-filme3.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#filme5{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-filme5.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: top;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#documentario1{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/documentario1.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#documentario2{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/documentario2.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#documentario3{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/documentario3.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#documentario4{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/documentario4.jpg');
+	height: 460px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#documentario5{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/documentario5.jpg');
+	height: 460px;
+	background-size: cover;
+	/*background-position: center;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.filme-principal .descricao{
+	margin-bottom: 40px;
+	text-align: justify;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.filme-principal .titulo{
+	margin-top: 20px;
+	font-size: 40px;
+	font-family: "Trebuchet MS", "Lucinda Sans Unicode", Arial, sans-serif;
+	margin-left: 17px;
+
+}
+
+.detalhes{
+	margin-left: 17px;
+	margin-top: 8px;
+	font-family: "Trebuchet MS", "Lucinda Sans Unicode", Arial, sans-serif;
+	font-size: 15px;
+
+
+}
+
+.Ultra{
+	border: 1px solid #d3d3d3;;
+	padding: 2px;
+	margin-right: 5px;
+	color: #d3d3d3;
+	font-weight: bold;
+}
+
+
+.Som{
+	border: 1px solid #d3d3d3;;
+	padding: 2px;
+	margin-right: 5px;
+	color: #d3d3d3;
+	font-weight: bold;
+}
+
+.Ano{
+	margin-right: 5px;
+}
+
+.ficha{
+	margin-left: 17px;
+	color: #d3d3d3;
+
+}
+
+.botao{
+	background-color: rgba(0, 0 , 0, .50);
+	color: white;
+	padding: 15px 30px;
+	margin: 15px;
+	font-size: 12px;
+	cursor: pointer;
+	border: none;
+	transition: .3s ease all;
+	border-radius: 10px;
+}
+
+
+
+.botao:hover{
+	color: black;
+	background-color:white;
+}
+
+.botao i{
+	margin-right: 8px;
+	font-size: 15px;
+}
+
+.filme-principal .container{
+	width: 70%;
+}
+
+.box-filme{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.carrosel-filmes{
+	margin-top: 20px;
+}
+
+.carrosel-filmes .destaques{
+	padding-bottom: 10px;
+	margin-left: 15px;
+}
+
+.item:hover{
+	border: 2px solid white;
+}
+
+
+.rodape{
+	margin-bottom: 20px;
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #d3d3d3;
+	font-size: 13px;
+	font-weight: bold;
+}
